@@ -12,7 +12,7 @@
     debug:
       msg: "Topics are: {{ topics | split(',') }}"
 
- - name :  set default value 
+  - name :  set default value 
     debug:
       msg: "HI {{ GREETING | default('Good Morning') }}"    
 
