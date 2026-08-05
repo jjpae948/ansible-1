@@ -43,3 +43,11 @@
   - name: convert to uppercase
     debug:
       msg: "{{ full_name | upper }}"
+
+  - name: convert to lowercase
+    debug:
+      msg: "{{ full_name | lower }}"
+
+  - name: check ipv4 address
+    debug:
+      msg: "{{ ip_address | ansible.utils.ipv4 }}"     
